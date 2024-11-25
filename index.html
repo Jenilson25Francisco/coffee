@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Coffee Now</title>
+</head>
+<body>
+    <div class="video-box">
+        <video src="./videos/coffe.mp4" loop muted autoplay></video>
+        <div class="mask"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./images//logo.png" alt="logo">
+            </a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#" onclick="openModal()">Endereço</a>
+            </nav>
+        </section>
+    </header>
+
+    
+    <section class="main-box">
+        <div>
+            <h3>Experimente o melhor café da região</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis at minima libero, obcaecati tenetur eos quos maxime veritatis deleniti totam perferendis corrupti esse, doloribus fugit itaque. Harum, quaerat maiores.</p>
+            <a href="#" class="btn-link">Pegue o seu agora</a>
+        </div>
+    </section>
+
+    <section class="about-box">
+        <h2 class="title"><span>Sobre</span> Nós</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./images/about-img.jpeg" alt="">
+            </div>
+            <div class="description">
+                <h3>O que faz o nosso café especial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo quas, voluptatibus ipsam dolor aliquid, accusantium, unde aliquam quasi corrupti repellat! Adipisci possimus explicabo amet voluptate accusamus eos quisquam earum, quam obcaecati labore, ut qui dignissimos aliquam at modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati porro repellendus in cumque architecto, illo enim earum blanditiis dolorum accusamus quos voluptate ut? Numquam, aperiam quod! Delectus quaerat iste velit? Quaerat illum voluptatem ab sequi, numquam obcaecati illo quo mollitia.</p>
+                <a href="#" class="btn-link">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="title"><span>Nosso</span> Endereço</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123375.28836296855!2d13.446097863569339!3d-14.910452624441806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ba34c0859af840d%3A0xa6ae403b3cfa7b42!2sPululukwa!5e0!3m2!1spt-PT!2sao!4v1732562750617!5m2!1spt-PT!2sao" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+
+    <div class="mask-2" onclick="closeModal()"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
